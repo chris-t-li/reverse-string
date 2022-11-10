@@ -1,16 +1,17 @@
 // Use Array Methods
-function reverseString1(str) {
-  return str.split("").reverse().join("");
-}
+// function reverseString1(str) {
+//   return str.split("").reverse().join("");
+// }
 
-// Use iteraction
+// Using While Loop
+
 function reverseString(str) {
-  // convert string param into an array
-  const strArray = str.split("");
-  // get length of array 
-  const n = strArray.length-1;
-  const reverseArray = strArray.map((element, index, array) => element = array[n - index])
-  return reverseArray.join("");  
+  let reverse_str = "", string = str;
+  while (string.length > 0) {
+    reverse_str = string[0] + reverse_str;
+    string = string.slice(1)
+  }
+  return reverse_str
 }
 
 if (require.main === module) {

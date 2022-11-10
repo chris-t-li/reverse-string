@@ -5,7 +5,6 @@ def reverse_string(str)
     reverse_str = str[0]+reverse_str
     str = str[1...]
   end
-
   reverse_str
 end
 
