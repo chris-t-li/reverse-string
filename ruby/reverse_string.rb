@@ -1,6 +1,14 @@
 def reverse_string(str)
-  # type your code in here
+  reverse_str = ""
+
+  while str.length > 0
+    reverse_str = str[0]+reverse_str
+    str = str[1...]
+  end
+
+  reverse_str
 end
+
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ih'"
